@@ -17,18 +17,18 @@ void loop() {
   digitalWrite(3, LOW);
   digitalWrite(4, LOW);
 
-  if (reading < 55)
+  if (reading < 800 && reading > 600)
   {
     //LED1 turns on
     digitalWrite(4, HIGH);
   }
 
-  if (reading < 50)
+  if (reading < 600 && reading > 400)
   {
     //LED2 turns on
     digitalWrite(3, HIGH);
   }
-  if (reading < 45)
+  if (reading < 400 && reading > 0)
   {
     //LED3 turns on
     digitalWrite(2, HIGH);
