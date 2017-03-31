@@ -33,4 +33,8 @@ void loop() {
     //LED3 turns on
     digitalWrite(2, HIGH);
   }
+  
+  /*If you want the LEDs to glow as a whole line going up and down instead of single LEDs glowing at each distance
+  range replace "if (reading < 600 && reading > 400)" with  "if (reading < 600)" and so on for each range.*/
+  
 }
